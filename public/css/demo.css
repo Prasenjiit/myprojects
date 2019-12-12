@@ -1,0 +1,110 @@
+body {
+  color: #333;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+#content {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  background-color: #fff;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: #e7e7e7;
+    padding: 0;
+  }
+
+  #content {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px 40px 30px 40px;
+    -webkit-box-shadow: 0 0 20px 0 #999;
+       -moz-box-shadow: 0 0 20px 0 #999;
+            box-shadow: 0 0 20px 0 #999;
+  }
+}
+
+.frame {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom: 20px;
+  overflow: scroll;
+}
+
+.frame > img { width: 100%; }
+
+#controls { text-align: center;
+width: 50%;
+margin: auto;
+margin-bottom: 5px; }
+
+#controls button {
+  margin: 0 5px;
+  min-width: 40px;
+  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+#controls a {
+    display: inline-block;
+    padding: 0 5%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #888;
+}
+
+#controls button:hover { color: #333; }
+
+#data {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#data .column {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#data li {
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#data span {
+  display: inline-block;
+  font-weight: normal;
+}
+
+
+
+/* css added by developer for image rotation */
+#document_picture {
+    transform-origin: top left; /* IE 10+, Firefox, etc. */
+    -webkit-transform-origin: top left; /* Chrome */
+    -ms-transform-origin: top left; /* IE 9 */
+}
+#document_picture.rotate90 {
+    transform: rotate(90deg) translateY(-100%);
+    -webkit-transform: rotate(90deg) translateY(-100%);
+    -ms-transform: rotate(90deg) translateY(-100%);
+}
+#document_picture.rotate180 {
+    transform: rotate(180deg) translate(-100%,-100%);
+    -webkit-transform: rotate(180deg) translate(-100%,-100%);
+    -ms-transform: rotate(180deg) translateX(-100%,-100%);
+}
+#document_picture.rotate270 {
+    transform: rotate(270deg) translateX(-100%);
+    -webkit-transform: rotate(270deg) translateX(-100%);
+    -ms-transform: rotate(270deg) translateX(-100%);
+}

@@ -1,0 +1,38 @@
+/*Mobile view*/
+/*Managing in each screen*/
+/*<--Zoom buttons-->*/
+@media(max-width:767px){
+    .tabs{
+        position: absolute !important; 
+        top: 1%;
+    }
+    .iviewer_zoom_in {
+        left: 0px !important;
+    }
+
+    .iviewer_zoom_out {
+      left: 34px !important;
+    }
+
+    .iviewer_zoom_zero {
+        left: 68px !important;
+    }
+
+    .iviewer_zoom_fit {
+        left: 102px !important;
+    }
+
+    .iviewer_zoom_status {
+        left: 136px !important;
+        width: 48px !important;
+    }
+
+    .iviewer_rotate_left {
+        left: 136px !important;
+    }
+
+    .iviewer_rotate_right {
+        left: 170px !important;
+    }
+}
+/*<--//Zoom buttons-->*/
